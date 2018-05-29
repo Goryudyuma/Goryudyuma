@@ -1,5 +1,5 @@
 # goryudyuma
-[![Build Status](https://travis-ci.org/Goryudyuma/Goryudyuma.png?branch=master)][travis]
+[![Build Status](https://travis-ci.org/Goryudyuma/Goryudyuma.png?branch=master)](https://travis-ci.org/Goryudyuma/Goryudyuma)
 
 > The [Sindre Sorhus](https://063.jp) CLI
 
