@@ -1,16 +1,17 @@
-# sindresorhus [![Build Status](https://travis-ci.org/sindresorhus/sindresorhus.svg?branch=master)](https://travis-ci.org/sindresorhus/sindresorhus)
+# goryudyuma [![Build Status](https://travis-ci.org/Goryudyuma/Goryudyuma.svg?branch=master)](https://travis-ci.org/Goryudyuma/Goryudyuma)
 
-> The [Sindre Sorhus](https://sindresorhus.com) CLI
+> The [Sindre Sorhus](https://063.jp) CLI
 
+[](
 <img src="screenshot.png" width="752">
-
+)
 
 ## Usage
 
 Install Node.js, then:
 
 ```
-$ npx sindresorhus
+$ npx goryudyuma
 ```
 
 
