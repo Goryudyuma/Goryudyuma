@@ -1,16 +1,16 @@
 {
-	"name": "sindresorhus",
-	"version": "2.0.1",
-	"description": "The Sindre Sorhus CLI",
+	"name": "goryudyuma",
+	"version": "0.0.1",
+	"description": "The Goryudyuma CLI",
 	"license": "MIT",
-	"repository": "sindresorhus/sindresorhus",
+	"repository": "Goryudyuma/Goryudyuma",
 	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"name": "Goryudyuma",
+		"email": "umaretekyoumade@gmail.com",
+		"url": "063.jp"
 	},
 	"bin": {
-		"sindresorhus": "source/cli.js"
+		"goryudyuma": "source/cli.js"
 	},
 	"engines": {
 		"node": ">=8"
@@ -24,7 +24,7 @@
 	"keywords": [
 		"cli-app",
 		"cli",
-		"sindresorhus",
+		"goryudyuma",
 		"unicorns"
 	],
 	"dependencies": {
