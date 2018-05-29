@@ -20,31 +20,23 @@ const handleSelect = item => {
 const items = [
 	{
 		label: 'Website',
-		url: 'https://sindresorhus.com'
+		url: 'https://063.jp'
 	},
 	{
 		label: 'Twitter',
-		url: 'https://twitter.com/sindresorhus'
+		url: 'https://twitter.com/Goryudyuma'
 	},
 	{
 		label: 'GitHub',
-		url: 'https://github.com/sindresorhus'
+		url: 'https://github.com/Goryudyuma'
 	},
 	{
 		label: 'Blog',
-		url: 'https://blog.sindresorhus.com'
+		url: 'https://goryudyuma.hatenablog.jp'
 	},
 	{
-		label: 'Ask Me Anything',
-		url: 'https://github.com/sindresorhus/ama'
-	},
-	{
-		label: 'Contact',
-		url: 'https://sindresorhus.com/contact'
-	},
-	{
-		label: 'Support my open source work',
-		url: 'https://www.patreon.com/sindresorhus'
+		label: 'Contact(Twitter)',
+		url: 'https://twitter.com/Goryudyuma'
 	},
 	{
 		label: 'Unicorns!',
@@ -67,7 +59,7 @@ module.exports = () => (
 	<div>
 		<br/>
 		<div>
-			<Text>I’m a full-time open-sourcerer making things like macOS apps, CLI tools, and modules.</Text>
+			<Text>よろしく。</Text>
 		</div>
 		<br/>
 		<SelectInput items={items} onSelect={handleSelect}/>
