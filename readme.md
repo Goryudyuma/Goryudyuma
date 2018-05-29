@@ -2,9 +2,9 @@
 
 > The [Sindre Sorhus](https://063.jp) CLI
 
-[](
+<!--
 <img src="screenshot.png" width="752">
-)
+-->
 
 ## Usage
 
