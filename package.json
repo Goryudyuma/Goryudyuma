@@ -7,7 +7,7 @@
 	"author": {
 		"name": "Goryudyuma",
 		"email": "umaretekyoumade@gmail.com",
-		"url": "063.jp"
+		"url": "https://063.jp"
 	},
 	"bin": {
 		"goryudyuma": "source/cli.js"
