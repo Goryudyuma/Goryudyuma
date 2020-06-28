@@ -1,10 +1,8 @@
 'use strict';
-const path = require('path');
 const React = require('react');
-const {Box, Text} = require('ink');
+const Text = require('ink');
 const SelectInput = require('ink-select-input').default;
 const open = require('open');
-const terminalImage = require('terminal-image');
 
 const handleSelect = item => {
 	if (item.url) {
@@ -45,7 +43,6 @@ const items = createItems([
 		label: 'Contact(Twitter)',
 		url: 'https://twitter.com/Goryudyuma'
 	},
-	// TODO: Add separator item here when https://github.com/vadimdemedes/ink-select-input/issues/4 is done
 	{
 		label: '---------'
 	},
@@ -64,5 +61,6 @@ module.exports = () => (
 			<Text>よろしく。</Text>
 		</div>
 		<br/>
+		<SelectInput items={items} onSelect={handleSelect}/>
 	</div>
 );
