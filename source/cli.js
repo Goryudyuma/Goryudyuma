@@ -4,7 +4,8 @@ const path = require('path');
 const termImg = require('term-img');
 const terminalImage = require('terminal-image');
 const importJsx = require('import-jsx');
-const {h, render} = require('ink');
+const React = require('react');
+const {render} = require('ink');
 
 const ui = importJsx('./ui');
 
@@ -15,4 +16,4 @@ const fallback = async () => {
 
 termImg(path.join(__dirname, 'avatar.png'), {fallback});
 
-render(h(ui));
+render(React.createElement(ui));

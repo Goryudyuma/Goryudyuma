@@ -1,9 +1,10 @@
 'use strict';
-const {h, Text} = require('ink');
-const SelectInput = require('ink-select-input');
-const opn = require('opn');
-
-const open = url => opn(url, {wait: false});
+const path = require('path');
+const React = require('react');
+const {Box, Text} = require('ink');
+const SelectInput = require('ink-select-input').default;
+const open = require('open');
+const terminalImage = require('terminal-image');
 
 const handleSelect = item => {
 	if (item.url) {
@@ -15,7 +16,15 @@ const handleSelect = item => {
 	}
 };
 
-const items = [
+const createItems = items => {
+	for (const item of items) {
+		item.key = item.url || item.label;
+	}
+
+	return items;
+};
+
+const items = createItems([
 	{
 		label: 'Website',
 		url: 'https://063.jp'
@@ -38,12 +47,15 @@ const items = [
 	},
 	// TODO: Add separator item here when https://github.com/vadimdemedes/ink-select-input/issues/4 is done
 	{
+		label: '---------'
+	},
+	{
 		label: 'Quit',
 		action() {
 			process.exit(); // eslint-disable-line unicorn/no-process-exit
 		}
 	}
-];
+]);
 
 module.exports = () => (
 	<div>
@@ -52,6 +64,5 @@ module.exports = () => (
 			<Text>よろしく。</Text>
 		</div>
 		<br/>
-		<SelectInput items={items} onSelect={handleSelect}/>
 	</div>
 );
