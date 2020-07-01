@@ -1,10 +1,11 @@
-'use strict';
-const React = require('react');
-const Text = require('ink');
-const SelectInput = require('ink-select-input').default;
-const open = require('open');
+"use strict";
 
-const handleSelect = item => {
+const React = require("react");
+const { Text } = require("ink");
+const SelectInput = require("ink-select-input").default;
+const open = require("open");
+
+const handleSelect = (item) => {
 	if (item.url) {
 		open(item.url);
 	}
@@ -14,9 +15,9 @@ const handleSelect = item => {
 	}
 };
 
-const createItems = items => {
+const createItems = (items) => {
 	for (const item of items) {
-		item.key = item.url || item.label;
+		item.key = item.label || item.url;
 	}
 
 	return items;
@@ -24,43 +25,41 @@ const createItems = items => {
 
 const items = createItems([
 	{
-		label: 'Website',
-		url: 'https://063.jp'
+		label: "Website",
+		url: "https://063.jp",
 	},
 	{
-		label: 'Twitter',
-		url: 'https://twitter.com/Goryudyuma'
+		label: "Twitter",
+		url: "https://twitter.com/Goryudyuma",
 	},
 	{
-		label: 'GitHub',
-		url: 'https://github.com/Goryudyuma'
+		label: "GitHub",
+		url: "https://github.com/Goryudyuma",
 	},
 	{
-		label: 'Blog',
-		url: 'https://goryudyuma.hatenablog.jp'
+		label: "Blog",
+		url: "https://goryudyuma.hatenablog.jp",
 	},
 	{
-		label: 'Contact(Twitter)',
-		url: 'https://twitter.com/Goryudyuma'
+		label: "Contact(Twitter)",
+		url: "https://twitter.com/Goryudyuma",
 	},
 	{
-		label: '---------'
+		label: "---------",
 	},
 	{
-		label: 'Quit',
+		label: "Quit",
 		action() {
 			process.exit(); // eslint-disable-line unicorn/no-process-exit
-		}
-	}
+		},
+	},
 ]);
 
 module.exports = () => (
 	<div>
-		<br/>
-		<div>
-			<Text>よろしく。</Text>
-		</div>
-		<br/>
-		<SelectInput items={items} onSelect={handleSelect}/>
+		<br />
+		<Text>よろしく。</Text>
+		<br />
+		<SelectInput items={items} onSelect={handleSelect} />
 	</div>
 );
