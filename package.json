@@ -16,7 +16,7 @@
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": ""
 	},
 	"files": [
 		"source"
